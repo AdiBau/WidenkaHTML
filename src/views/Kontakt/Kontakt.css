@@ -1,0 +1,75 @@
+.KontaktHolder {
+	position: relative;
+	border: 2px solid rgb(254, 254, 254);
+	width: 92%;
+	padding: 5px 5px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(254, 254, 254, 0.5);
+}
+.Kontakt {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-items: center;
+	justify-content: space-around;
+	text-wrap: nowrap;
+}
+.KontaktAdress,
+.KontaktTel {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+}
+
+.Mapa {
+	display: block;
+	width: 705px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	overflow: hidden;
+}
+.Mapa iframe {
+	width: 700px;
+	height: 300px;
+}
+@media screen and (max-width: 768px) {
+	.KontaktHolder {
+		border: 2px solid rgb(254, 254, 254);
+		width: 92%;
+		padding: 5px 5px;
+		margin: 0 auto;
+		box-shadow: 0 0 10px rgba(254, 254, 254, 0.5);
+	}
+	.Kontakt {
+		grid-template-columns: auto;
+		width: 95%;
+		margin: 0 auto;
+		font-size: 16px;
+		background-color: rgb(247, 245, 243);
+		gap: 10px;
+	}
+	.KontaktAdress,
+	.KontaktTel {
+		display: grid;
+		grid-template-columns: 15% auto;
+	}
+	.KontaktEmail div p:first-child {
+		display: none;
+	}
+
+	.Mapa {
+		width: 304px;
+		margin: 5px auto;
+	}
+	.Mapa iframe {
+		width: 300px;
+		height: 200px;
+	}
+}

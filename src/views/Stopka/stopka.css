@@ -1,0 +1,44 @@
+.Stopka {
+	position: absolute;
+	bottom: -25px;
+	left: 20px;
+	right: 20px;
+	border-top: 2px solid #fefefe;
+	background-color: #212121;
+	color: #ddda11;
+	padding: 2px 0;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-items: center;
+	justify-content: space-around;
+	text-wrap: nowrap;
+}
+.StopkaKontaktAdress,
+.StopkaKontaktTel,
+.StopkaKontaktEmail {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+@media (orientation: portrait) {
+	.Stopka {
+		left: 0px;
+		right: 0px;
+		font-size: 10px;
+		align-items: center;
+		justify-content: space-around;
+		text-wrap: wrap;
+		grid-template-columns: auto auto;
+	}
+	.StopkaKontaktAdress,
+	.StopkaKontaktTel,
+	.StopkaKontaktEmail {
+		grid-template-columns: auto auto;
+		gap: 5px;
+	}
+	.StopkaKontaktEmail {
+		display: none;
+	}
+}

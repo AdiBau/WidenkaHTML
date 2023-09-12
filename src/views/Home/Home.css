@@ -1,0 +1,115 @@
+.Home {
+	display: block;
+	margin: 0 auto;
+	margin-top: 620px;
+	width: 80%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	z-index: 1000;
+}
+.LogoWidenka {
+	display: block;
+	left: 50%;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	z-index: -1;
+	overflow: hidden;
+	opacity: 0.5;
+}
+.imgLogo {
+	width: 100%;
+	z-index: -1;
+}
+.HomeImgHolder {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	height: 450px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	z-index: 2;
+}
+.img {
+	height: 450px;
+	display: block;
+	border-radius: 10px;
+}
+.HomeText {
+	margin-top: 25px;
+	display: block;
+	font-size: 23px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	text-align: justify;
+	width: 100%;
+	background-color: transparent;
+}
+.Point {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
+	z-index: 9999;
+	gap: 5px;
+	margin-top: 5px;
+}
+.imgLaurat,
+.imgOrly {
+	width: 100%;
+}
+.OpinieHolder {
+	display: grid;
+	margin: 0 auto;
+	width: 90%;
+	gap: 10px;
+	text-align: center;
+}
+.Opinie {
+	width: 100%;
+}
+.Laurat,
+.Orly {
+	overflow: hidden;
+}
+.Nagrody {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 30px;
+	width: 70%;
+	margin: 20px auto;
+}
+@media (orientation: portrait) {
+	.HomeText {
+		font-size: 15px;
+	}
+	.HomeText .strong {
+		text-justify: inter-word;
+	}
+	.Home {
+		margin-top: 250px;
+		width: 95%;
+	}
+	.HomeImgHolder {
+		width: 90%;
+		height: 200px;
+	}
+
+	.img {
+		display: block;
+		height: 200px;
+	}
+	.Point input {
+		width: 10px;
+	}
+	.Nagrody {
+		grid-template-columns: auto auto;
+		gap: 30px;
+		width: 70%;
+		margin: 20px auto;
+	}
+}
